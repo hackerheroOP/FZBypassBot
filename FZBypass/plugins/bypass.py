@@ -27,7 +27,7 @@ async def start_msg(client, message):
     )
     
 @Bypass.on_message(command('help'))
-async def start_msg(client, message):
+async def help_msg(client, message):
     await message.reply(f'''<b>Supported Websites
     <b>Websites that can be bypassed using this bot.</b>
     
