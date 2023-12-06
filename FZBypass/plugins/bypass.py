@@ -16,7 +16,7 @@ from FZBypass.core.exceptions import DDLException
 async def start_msg(client, message):
     await message.reply(f'''<b><i>Bypass Bot!</i></b>
     
-  <i>A Powerful Elegant Multi Threaded Bot written in Python... which can Bypass Various Shortener Links, Scrape links, and More ... </i
+  <i>Click on /help to see websites which can be Bypassed, Scraped, and More ... </i
   <i><b>Bot Started {convert_time(time() - BOT_START)} ago...</b></i>
 
 🛃 <b>Use Me Here :</b> @Bhaiyajibypass <i>(Bypass Topic)</i>''',
@@ -25,7 +25,18 @@ async def start_msg(client, message):
             [InlineKeyboardButton('🎓 Dev', url='https://t.me/telebotsupdate'), InlineKeyboardButton('🔍 Use Here', url="https://t.me/bhaiyajibypass")]
             ])
     )
-
+    
+@Bypass.on_message(command('help'))
+async def start_msg(client, message):
+    await message.reply(f'''<b>Supported Websites
+    <b>Websites that can be bypassed using this bot.</b>
+    
+    Click on below button''',
+        quote=True,
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton('👉 Supported Webistes 👈', url='https://throwbin.in/047cjb')]
+            ])
+    )
 
 @Bypass.on_message(BypassFilter & (user(Config.OWNER_ID) | AuthChatsTopics))
 async def bypass_check(client, message):
