@@ -19,10 +19,10 @@ async def start_msg(client, message):
   <i>Click on /help to see websites which can be Bypassed, Scraped, and More ... </i
   <i><b>Bot Started {convert_time(time() - BOT_START)} ago...</b></i>
 
-🛃 <b>Use Me Here :</b> @Bhaiyajibypass <i>(Bypass Topic)</i>''',
+🛃 <b>Use Me Here :</b> https://t.me/+jG1w7mgn8Cg3NzY1 <i>(Bypass Topic)</i>''',
         quote=True,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton('🎓 Dev', url='https://t.me/telebotsupdate'), InlineKeyboardButton('🔍 Use Here', url="https://t.me/bhaiyajibypass")]
+            [InlineKeyboardButton('🎓 Dev', url='https://t.me/Movies_Zone_Media'), InlineKeyboardButton('🔍 Use Here', url="https://t.me/+jG1w7mgn8Cg3NzY1")]
             ])
     )
     
